@@ -1,0 +1,11 @@
+# 实现一个tui模板
+
+# 效果
+![alt text](./data/image.png)
+
+# 测试
+```
+./rebuild.sh
+
+# q或Ctrl^C退出
+```

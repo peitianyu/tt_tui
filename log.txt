@@ -1,0 +1,21 @@
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /mnt/d/ws/test/cc/test_tui/build
+Scanning dependencies of target all_tests
+[ 16%] Building C object CMakeFiles/all_tests.dir/src/test/tests/test_tui_basic.c.o
+[ 33%] Linking C executable all_tests
+[100%] Built target all_tests
+[32m[ RUN      ] tui_basic.test[0m
+[2J[1;20H┌box1────────────────────────────────────────────┐
+[2;20H│                                                │
+[3;20H│                                                │
+[4;20H│                                                │
+[5;20H│                                                │
+[6;20H│                                                │
+[7;20H│                                                │
+[8;20H│                                                │
+[9;20H│                                                │
+[10;20H└────────────────────────────────────────────────┘
+[2;22H[40mHello[0m
+[2;22H     [2;22H[40mWorld[0m
+[2J
