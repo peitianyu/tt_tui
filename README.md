@@ -1,4 +1,4 @@
-# Dependency-free single header file implementation of the tui tool
+# A single-header terminal UI (TUI) library
 ## Implementation Functions
     - labeled text
     - box
