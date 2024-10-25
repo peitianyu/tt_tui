@@ -14,7 +14,6 @@ void exit_handler(int sig) {ui_free(g_ui);}
 
 void key_event(struct ui_t *ui) {
     static bool is_ctrl_mode = true;
-
     int ch = ui_read_key();
     if(ch == EOF)   return ;
     
@@ -24,10 +23,8 @@ void key_event(struct ui_t *ui) {
             return;
         }else if(ch == BACKSPACE) ui_input_field_del_ch(ui, "input1");
         else                      ui_input_field_add_ch(ui, "input1", ch);
-        
         list_push(g_ui->event_list, draw_input);
     }
-
     
     if(ch == 'q') ui_free(g_ui);
     else if(ch == ARROW_LEFT) ui_text_cursor(ui, "text1", -1);
