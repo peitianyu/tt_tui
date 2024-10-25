@@ -143,7 +143,6 @@ static inline void dict_put(Dict *dict, char *key, void *val) {
     e->val = val;
     list_push(dict->list, e);
 }
-
 /* __DICT_H__ */
 
 /* __TUI_H__ */
@@ -215,8 +214,7 @@ static inline void ui_disable_mode() {
     tcsetattr(STDIN_FILENO, TCSAFLUSH, &raw);
 }
 
-static inline struct ui_t *ui_new(void)
-{
+static inline struct ui_t *ui_new(void) {
     struct ui_t *u = malloc(sizeof(struct ui_t));
     u->box_dict = make_dict(NULL);
     u->text_dict = make_dict(NULL);
@@ -228,8 +226,7 @@ static inline struct ui_t *ui_new(void)
     return u;
 }
 
-static inline void ui_free(struct ui_t *ui)
-{
+static inline void ui_free(struct ui_t *ui) {
     free(ui);
     ui_show_cursor();
     ui_disable_mode();

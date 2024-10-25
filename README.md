@@ -1,26 +1,27 @@
-# 但头文件实现的tui工具
-## 实现功能
-    - 标签文本
+# Dependency-free single header file implementation of the tui tool
+## Implementation Functions
+    - labeled text
     - box
-    - 下拉框
-    - 文本框, 基本文本编辑
-    - 键盘读取与控制
-    - 光标移动
+    - drop-down box
+    - text box, basic text editor
+    - keyboard reading and control
+    - cursor movement
 
-# 效果
+## Showcase
 ![alt text](./doc/image.png)
 
-# 测试
+## Test
 ```
+# build
 ./rebuild.sh
 
-# q或Ctrl^C退出
-# 回车 -> 进入下拉框
-# i进入编辑模式, 输入字符后编辑
-# esc退出编辑模式, 上下左右移动光标
+# q or Ctrl^C to exit
+# Enter -> Go to dropdown box
+# i Enter edit mode, enter characters and edit.
+# esc to exit edit mode, move cursor up, down, left and right
 ```
 
-# demo测试
+# Example
 ```c
 #include "tui.h"
 #include <signal.h>
